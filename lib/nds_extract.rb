@@ -7,7 +7,7 @@ require 'pry'
 def gross_for_director(director_data)
   total = 0 # Total for a director's movies
   movie_index = 0 # Counter for the index of the :movies key in the d_d array
-  while movie_index < director_data[:movies].count do # While the index of the director_data hash in the
+  while movie_index < director_data[:movies].count do # While the movie index is less than the number of movies in the director_data hash do...
 	   total += director_data[:movies][movie_index][:worldwide_gross] # Access the gross amount for every movie and increment the total
 	   movie_index += 1 # Increment the counter
   end
