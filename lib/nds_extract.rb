@@ -21,7 +21,7 @@ def directors_totals(nds)
   while director_id < nds.length do # While the current director_id (index) is less than the length of the nds do...
     directors_totals[nds[director_id][:name]] = gross_for_director(nds[director_id]) # Setting the current director's name as the key and
     #the current director's gross total as the value for that key inside the final hash directors_totals
-    director_id += 1 # Incrementor
+    director_id += 1 # Increment the counter
   end
   directors_totals
 end
